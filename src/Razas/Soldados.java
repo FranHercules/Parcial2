@@ -9,6 +9,18 @@ package Razas;
  *
  * @author javie
  */
-public class Soldados {
+public class Soldados implements interfaz_razas {
+    private String nombre;
+
+    @Override
+    public void setNombre(String nombre) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public String getNombre() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
     
 }
