@@ -10,7 +10,7 @@ package Milicia;
  * @author javie
  */
 public interface interfaz_milicias {
-    public int getNombre();
+    public String getNombre();
     public void setNombre(String nombre);
     
     public int getVida();
