@@ -10,5 +10,16 @@ package Razas;
  * @author javie
  */
 public class factory_razas {
-    
+    public static interfaz_razas getRaza(String opcion){
+        switch(opcion){
+            case "soldados":
+                   return new Soldados();
+            case "androides":
+                   return new Androides();
+            case "aliens":
+                   return new Aliens();
+            
+        }
+        return null;
+    }
 }
