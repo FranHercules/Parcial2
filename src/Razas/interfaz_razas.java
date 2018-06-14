@@ -10,6 +10,7 @@ package Razas;
  * @author javie
  */
 public interface interfaz_razas {
+    
     public String getNombre();
     
     public void setNombre(String nombre);

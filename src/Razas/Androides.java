@@ -9,6 +9,18 @@ package Razas;
  *
  * @author javie
  */
-public class Androides {
+public class Androides implements interfaz_razas {
+    private String nombre;
+
+    @Override
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    @Override
+    public String getNombre() {
+        return nombre;
+    }
+    
     
 }

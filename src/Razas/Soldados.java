@@ -14,12 +14,12 @@ public class Soldados implements interfaz_razas {
 
     @Override
     public void setNombre(String nombre) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.nombre = nombre;
     }
 
     @Override
     public String getNombre() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return nombre;
     }
     
     
