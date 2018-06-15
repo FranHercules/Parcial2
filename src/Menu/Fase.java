@@ -5,22 +5,18 @@
  */
 package Menu;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author javie
  */
-public class main {
+public class Fase {
+    public int numfase=1;
+    public ArrayList<Usuario> usuarios;
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        
-        Principal menu = Principal.getInstance();
-         
-        
-        menu.mostrar();
-    
+    public Fase() {
+        usuarios = new ArrayList<>();
     }
     
 }
