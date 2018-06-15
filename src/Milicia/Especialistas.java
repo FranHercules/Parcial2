@@ -70,7 +70,7 @@ public class Especialistas implements interfaz_milicias{
             return this;
         }
         
-        public Especialistas Escuadron(){
+        public Especialistas Builder(){
         return new Especialistas(this);
         }
     }

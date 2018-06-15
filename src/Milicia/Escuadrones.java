@@ -70,8 +70,9 @@ public class Escuadrones implements interfaz_milicias{
             return this;
         }
         
-        public Escuadrones Escuadron(){
+        public Escuadrones Builder(){
         return new Escuadrones(this);
         }
+
     }
 }
