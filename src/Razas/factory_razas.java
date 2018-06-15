@@ -12,11 +12,11 @@ package Razas;
 public class factory_razas {
     public static interfaz_razas getRaza(String opcion){
         switch(opcion){
-            case "soldados":
+            case "Soldados":
                    return new Soldados();
-            case "androides":
+            case "Androides":
                    return new Androides();
-            case "aliens":
+            case "Aliens":
                    return new Aliens();
             
         }

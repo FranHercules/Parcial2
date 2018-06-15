@@ -31,7 +31,7 @@ public class Principal {
     }
 
     public void opcionesDeJugada() {
-        System.out.println("\t\t********** KarichaLobato`sWorld **********");
+        System.out.println("\t\t--------- FranHercule'sWorld ----------");
         System.out.println("\t\t1. Construir Edificios.");
         System.out.println("\t\t2. Ver dificios disponibles para acciones.");
         System.out.println("\t\t3. Crear milicias");
@@ -44,17 +44,17 @@ public class Principal {
     }
     
     public void menuRazas(){
-        System.out.println("********** KarichaLobato`sWorld **********");
-        System.out.println("\t\t1. Gryffindor");
-        System.out.println("\t\t2. Slytherin");
-        System.out.println("\t\t3. Ravenclow");
+        System.out.println("--------- FranHercule'sWorld ----------");
+        System.out.println("\t\t1. Soldados");
+        System.out.println("\t\t2. Androides");
+        System.out.println("\t\t3. Aliens");
     }
     
     public void Bienvenida(){
-       System.out.println("********** KarichaLobato`sWorld **********");
-       System.out.println("\nBienvenidos a este mundo en el cual podrás experimentar"
-               + "\nla magía de poder jugar en contra de las  otras casas, que siempre has querido"
-               + "\ntenfrentarte en las peliculas de Harry Potter,pero conotra versión de la saga.");
+       System.out.println("--------- FranHercule'sWorld ----------");
+       System.out.println("\nBienvenidos guerreros"
+               + "\nLas guerras entre diferentes seres son mas complejas de lo que parecen"
+               + "\nEnfrentate y descubre que guerreros son los que deben dominar");
     }
     
     public interfaz_razas getraza(){
@@ -69,16 +69,16 @@ public class Principal {
                 opcionRaza = read.nextInt();
                 switch (opcionRaza){
                     case 1:
-                        return factory_razas.getRaza("GRYFFINDOR");
+                        return factory_razas.getRaza("Soldados");
                         
                     case 2:
-                        return factory_razas.getRaza("RAVENCLOW");
+                        return factory_razas.getRaza("Androides");
                         
                     case 3:
-                        return factory_razas.getRaza("SLYTHRIN");
+                        return factory_razas.getRaza("Aliens");
                         
                     default:
-                        System.out.println("\t\t********** PROGRAMA FINALIZADO **********");
+                        System.out.println("\t\t---------- PROGRAMA FINALIZADO ----------");
                         break;
                 }
                 

@@ -15,27 +15,27 @@ public class factory_milicias {
             case "soldados":
                 switch (milicia){
                     case "ESCUADRONES":
-                        return new Escuadrones.miliciaEscuadron().nombre("GrageasBertriBott").ataque(10).vida(100).Builder();
+                        return new Escuadrones.miliciaEscuadron().nombre("Escuadron de Caballeria 1").ataque(10).vida(100).Builder();
                     case "ESPECIALISTA":
-                        return new Especialistas.miliciaEspecialista().nombre("CortezaDeArbolVital").ataque(20).vida(50).Builder();
+                        return new Especialistas.miliciaEspecialista().nombre("HombreGama").ataque(20).vida(50).Builder();
                    
                 }
             
             case "androides":
                 switch (milicia){
                     case "ESCUADRONES":
-                        return new Escuadrones.miliciaEscuadron().nombre("GrageasBertriBott").ataque(10).vida(100).Builder();
+                        return new Escuadrones.miliciaEscuadron().nombre("Terminators").ataque(10).vida(100).Builder();
                     case "ESPECIALISTAS":
-                        return new Especialistas.miliciaEspecialista().nombre("CortezaDeArbolVital").ataque(20).vida(50) .Builder();
+                        return new Especialistas.miliciaEspecialista().nombre("Destructor").ataque(20).vida(50) .Builder();
                     
                 }
             
             case "aliens":
                 switch (milicia){
                     case "ESCUADRONES":
-                        return new Escuadrones.miliciaEscuadron().nombre("GrageasBertriBott").ataque(10).vida(100).Builder();
+                        return new Escuadrones.miliciaEscuadron().nombre("Chitauris").ataque(10).vida(100).Builder();
                     case "ESPECIALISTA":
-                        return new Especialistas.miliciaEspecialista().nombre("CortezaDeArbolVital").ataque(20).vida(50).Builder();
+                        return new Especialistas.miliciaEspecialista().nombre("Espectro").ataque(20).vida(50).Builder();
                     
                 }
         }
