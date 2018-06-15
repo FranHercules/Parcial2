@@ -33,14 +33,10 @@ public class Principal {
     public void opcionesDeJugada() {
         System.out.println("\t\t--------- FranHercule'sWorld ----------");
         System.out.println("\t\t1. Construir Edificios.");
-        System.out.println("\t\t2. Ver dificios disponibles para acciones.");
-        System.out.println("\t\t3. Crear milicias");
-        System.out.println("\t\t4. Entrenar Milicias");
-        System.out.println("\t\t5. Curar Milicias");
-        System.out.println("\t\t6. Crear vehiculos");
-        System.out.println("\t\t7. Ver recursos disponibles");
-        System.out.println("\t\t8. Pasar de turno.");
-        System.out.println("\t\t9. SALIR");
+        System.out.println("\t\t2. Entrenar Milicias");
+        System.out.println("\t\t3. Crear vehiculos");
+        System.out.println("\t\t4. Pasar de turno.");
+        System.out.println("\t\t5. SALIR");
     }
     
     public void menuRazas(){
@@ -128,17 +124,17 @@ public class Principal {
         Bienvenida();
         fase.usuarios.add(new Usuario());
         fase.usuarios.add(new Usuario());
-        System.out.println("\nIngrese nombre del primer Jugador: ");
+        System.out.println("\nIngrese nombre del Jugador 1: ");
         Scanner leer = new Scanner(System.in);
         fase.usuarios.get(0).setNombre(leer.nextLine());
-        System.out.println("Ingrese nombre del segundo Jugador: ");
+        System.out.println("Ingrese nombre del Jugador 2: ");
         fase.usuarios.get(1).setNombre(leer.nextLine());
-        System.out.println("Elegi tu raza Jugador 1");
+        System.out.println("\nSelecciona una raza Jugador 1");
         while (fase.usuarios.get(0).getRaza() == null) {
             fase.usuarios.get(0).setRaza(getraza());
         }
 
-        System.out.println("Elegi tu raza Jugador 2");
+        System.out.println("\nSelecciona una raza Jugador 2");
         while (fase.usuarios.get(1).getRaza() == null) {
             fase.usuarios.get(1).setRaza(getraza());
         }
@@ -158,7 +154,7 @@ public class Principal {
         
         System.out.println("***************A JUGAR***************");
        
-            System.out.println("Inicia Fase "+fase.numfase);
+            System.out.println("                                 Fase "+fase.numfase);
             System.out.println("------------------------");
             System.out.println("Turno de jugador"+(n+1));
             menuFases(fase.usuarios.get(n));
