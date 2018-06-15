@@ -10,5 +10,19 @@ package Vehiculos;
  * @author javie
  */
 public class factory_vehiculos {
+    public static interfaz_vehiculos getVehiculo(String tipo){
+        switch(tipo){
+            case "VEHICULO_SOLDADO":
+                return new Tanque();
+           
+            case "VEHICULO_ANDROIDE":
+                return new Androbuster();
+                
+            case "VEHICULO_ALIENS":
+                return new Spacecraft();
+                
+        }
+        return null;
+    }
     
 }
