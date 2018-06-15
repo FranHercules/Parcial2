@@ -9,6 +9,28 @@ package Vehiculos;
  *
  * @author javie
  */
-public class Tanque {
+public class Tanque implements interfaz_vehiculos {
+    
+    private int vida,ataque;
+
+    @Override
+    public int getAtaque() {
+        return ataque;
+    }
+
+    @Override
+    public void setAtaque(int ataque) {
+        this.ataque = ataque;
+    }
+
+    @Override
+    public int getVida() {
+        return vida;
+    }
+
+    @Override
+    public void setVida(int vida) {
+        this.vida = vida;
+    }
     
 }
