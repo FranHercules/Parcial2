@@ -11,4 +11,12 @@ package Edificios;
  */
 public class factory_edificios {
     
+    public static interfaz_edificios getEdificio(String opcion){
+        switch(opcion){
+            case "CENTRODEMANDO":
+                return new CentroMando.buildercentro().vida(2000).builder();
+        }
+        return null;
+    } 
+    
 }

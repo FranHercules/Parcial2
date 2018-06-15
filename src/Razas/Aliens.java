@@ -5,6 +5,9 @@
  */
 package Razas;
 
+import Edificios.factory_edificios;
+import Edificios.interfaz_edificios;
+
 /**
  *
  * @author javie
@@ -22,5 +25,9 @@ public class Aliens implements interfaz_razas {
         return nombre;
     }
     
+    @Override
+    public interfaz_edificios construir(String tipo){
+        return factory_edificios.getEdificio(tipo);
+    }
     
 }
